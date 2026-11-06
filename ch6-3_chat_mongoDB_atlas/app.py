@@ -218,4 +218,4 @@ if __name__ == "__main__":
     # - 上 Render/雲端建議讀取環境變數 PORT，而不是硬寫 5000：
     #     port = int(os.getenv("PORT", 5000))
     #   然後改成 socketio.run(..., port=port)
-    socketio.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 5000)))
+    socketio.run(app, host="0.0.0.0", port=5000, debug=True)
